@@ -1,0 +1,461 @@
+{
+  "generatedAt": "2026-10-26T01:32:26.864Z",
+  "node": "v22.17.1",
+  "auth": {
+    "requestedScope": "read",
+    "grantedScope": null,
+    "accessTokenLifetimeSeconds": 3600,
+    "refreshTokenIssued": true
+  },
+  "tools": {
+    "count": 27,
+    "names": [
+      "create_note",
+      "get_note",
+      "edit_note",
+      "update_note_tags",
+      "delete_note",
+      "restore_note",
+      "move_notes",
+      "semantic_search",
+      "search_notes",
+      "search_notebooks",
+      "search_tasks",
+      "search_spaces",
+      "get_space",
+      "create_space",
+      "create_notebook",
+      "rename_notebook",
+      "move_notebook",
+      "search_tags",
+      "create_tag",
+      "edit_tag",
+      "get_attachment",
+      "start_attachment_upload",
+      "finalize_attachment",
+      "create_task",
+      "get_task",
+      "update_task",
+      "delete_task"
+    ]
+  },
+  "testNotebooks": {
+    "searchNotebooks": {
+      "ok": true,
+      "errorText": null,
+      "content": [
+        {
+          "type": "text",
+          "text": "1. 4190e2f7-b1e2-4a0a-c48f-b1897f3ff741 — MCP Test A\n2. e9eb589c-6a57-babf-37e0-5501ff5479bf — MCP Test B\n\nShowing 2 of 2 (startIndex=0)."
+        }
+      ],
+      "structuredContent": {
+        "hits": [
+          {
+            "notebookId": "4190e2f7-b1e2-4a0a-c48f-b1897f3ff741",
+            "label": "MCP Test A",
+            "searchFilter": "nbGuid:\"4190e2f7-b1e2-4a0a-c48f-b1897f3ff741\"",
+            "score": 0.7,
+            "stack": null,
+            "primaryAccess": "OWNED",
+            "workspaceId": null,
+            "workspaceName": null
+          },
+          {
+            "notebookId": "e9eb589c-6a57-babf-37e0-5501ff5479bf",
+            "label": "MCP Test B",
+            "searchFilter": "nbGuid:\"e9eb589c-6a57-babf-37e0-5501ff5479bf\"",
+            "score": 0.7,
+            "stack": null,
+            "primaryAccess": "OWNED",
+            "workspaceId": null,
+            "workspaceName": null
+          }
+        ],
+        "totalResultCount": 2,
+        "startIndex": 0,
+        "isLastPage": true
+      }
+    },
+    "notesInA": {
+      "ok": true,
+      "errorText": null,
+      "content": [
+        {
+          "type": "text",
+          "text": "1. 1485f425-1752-6081-8ae9-a1af33e2746c — Test note 2\n2. 11bbaa78-63c1-c5a0-6848-987035a2794d — Test note 1\n\nShowing 2 of 2 (startIndex=0)."
+        }
+      ],
+      "structuredContent": {
+        "hits": [
+          {
+            "noteId": "1485f425-1752-6081-8ae9-a1af33e2746c",
+            "title": "Test note 2",
+            "snippet": "delta echo",
+            "createdAt": "2026-10-25T17:11:22.000Z",
+            "updatedAt": "2026-10-25T17:11:35.000Z",
+            "score": 0
+          },
+          {
+            "noteId": "11bbaa78-63c1-c5a0-6848-987035a2794d",
+            "title": "Test note 1",
+            "snippet": "alpha bravo charlie",
+            "createdAt": "2026-10-25T17:09:44.000Z",
+            "updatedAt": "2026-10-25T17:11:10.000Z",
+            "score": 0
+          }
+        ],
+        "totalResultCount": 2,
+        "startIndex": 0,
+        "isLastPage": true
+      }
+    },
+    "notesInB": {
+      "ok": true,
+      "errorText": null,
+      "content": [
+        {
+          "type": "text",
+          "text": "No matching notes."
+        }
+      ],
+      "structuredContent": {
+        "hits": [],
+        "totalResultCount": 0,
+        "startIndex": 0,
+        "isLastPage": true
+      }
+    },
+    "getNote1": {
+      "ok": true,
+      "errorText": null,
+      "content": [
+        {
+          "type": "text",
+          "text": "Test note 1"
+        },
+        {
+          "type": "text",
+          "text": "{\"notebookId\":\"4190e2f7-b1e2-4a0a-c48f-b1897f3ff741\",\"tags\":[{\"id\":\"30dc3fd2-6885-2ceb-62f7-b4c5d36f5078\",\"name\":\"mcptest\",\"parentId\":null}],\"resources\":[{\"id\":\"612e1b18-2430-3851-c897-7034e113926b\",\"hash\":\"2fb191500c7a2ce5328828e1650b5759\",\"mime\":\"image/jpeg\",\"name\":\"IMG_7092.HEIC\",\"sizeBytes\":1784307}],\"tasks\":[]}"
+        },
+        {
+          "type": "text",
+          "text": "<!DOCTYPE en-note SYSTEM \"http://xml.evernote.com/pub/enml2.dtd\"><en-note><div>alpha bravo charlie </div><en-media style=\"--en-naturalWidth:3024; --en-naturalHeight:4032;\" hash=\"2fb191500c7a2ce5328828e1650b5759\" type=\"image/jpeg\" /><div><br/></div></en-note>"
+        }
+      ],
+      "structuredContent": {
+        "id": "11bbaa78-63c1-c5a0-6848-987035a2794d",
+        "title": "Test note 1",
+        "version": 170804,
+        "updateSequenceNumber": 179531,
+        "notebookId": "4190e2f7-b1e2-4a0a-c48f-b1897f3ff741",
+        "content": "<!DOCTYPE en-note SYSTEM \"http://xml.evernote.com/pub/enml2.dtd\"><en-note><div>alpha bravo charlie </div><en-media style=\"--en-naturalWidth:3024; --en-naturalHeight:4032;\" hash=\"2fb191500c7a2ce5328828e1650b5759\" type=\"image/jpeg\" /><div><br/></div></en-note>",
+        "created": "2026-10-25T17:09:44.000Z",
+        "updated": "2026-10-25T17:11:10.000Z",
+        "active": true,
+        "deleted": null,
+        "tasks": [],
+        "tags": [
+          {
+            "id": "30dc3fd2-6885-2ceb-62f7-b4c5d36f5078",
+            "name": "mcptest",
+            "parentId": null
+          }
+        ],
+        "resources": [
+          {
+            "id": "612e1b18-2430-3851-c897-7034e113926b",
+            "hash": "2fb191500c7a2ce5328828e1650b5759",
+            "mime": "image/jpeg",
+            "name": "IMG_7092.HEIC",
+            "sizeBytes": 1784307
+          }
+        ],
+        "attributes": {
+          "author": "<account owner>",
+          "sourceUrl": null,
+          "sourceApplication": null,
+          "placeName": null,
+          "reminderTime": null,
+          "reminderDoneTime": null,
+          "isTemplate": null
+        }
+      }
+    }
+  },
+  "move": {
+    "before": {
+      "ok": true,
+      "errorText": null,
+      "content": [
+        {
+          "type": "text",
+          "text": "Test note 2"
+        },
+        {
+          "type": "text",
+          "text": "{\"notebookId\":\"4190e2f7-b1e2-4a0a-c48f-b1897f3ff741\",\"tags\":[],\"resources\":[],\"tasks\":[]}"
+        },
+        {
+          "type": "text",
+          "text": "<!DOCTYPE en-note SYSTEM \"http://xml.evernote.com/pub/enml2.dtd\"><en-note><div>delta echo</div></en-note>"
+        }
+      ],
+      "structuredContent": {
+        "id": "1485f425-1752-6081-8ae9-a1af33e2746c",
+        "title": "Test note 2",
+        "version": 170804,
+        "updateSequenceNumber": 179537,
+        "notebookId": "4190e2f7-b1e2-4a0a-c48f-b1897f3ff741",
+        "content": "<!DOCTYPE en-note SYSTEM \"http://xml.evernote.com/pub/enml2.dtd\"><en-note><div>delta echo</div></en-note>",
+        "created": "2026-10-25T17:11:22.000Z",
+        "updated": "2026-10-25T17:11:35.000Z",
+        "active": true,
+        "deleted": null,
+        "tasks": [],
+        "tags": [],
+        "resources": [],
+        "attributes": {
+          "author": "<account owner>",
+          "sourceUrl": null,
+          "sourceApplication": null,
+          "placeName": null,
+          "reminderTime": null,
+          "reminderDoneTime": null,
+          "isTemplate": null
+        }
+      }
+    },
+    "after": {
+      "ok": true,
+      "errorText": null,
+      "content": [
+        {
+          "type": "text",
+          "text": "Test note 2"
+        },
+        {
+          "type": "text",
+          "text": "{\"notebookId\":\"e9eb589c-6a57-babf-37e0-5501ff5479bf\",\"tags\":[],\"resources\":[],\"tasks\":[]}"
+        },
+        {
+          "type": "text",
+          "text": "<!DOCTYPE en-note SYSTEM \"http://xml.evernote.com/pub/enml2.dtd\"><en-note><div>delta echo</div></en-note>"
+        }
+      ],
+      "structuredContent": {
+        "id": "1485f425-1752-6081-8ae9-a1af33e2746c",
+        "title": "Test note 2",
+        "version": 170805,
+        "updateSequenceNumber": 179622,
+        "notebookId": "e9eb589c-6a57-babf-37e0-5501ff5479bf",
+        "content": "<!DOCTYPE en-note SYSTEM \"http://xml.evernote.com/pub/enml2.dtd\"><en-note><div>delta echo</div></en-note>",
+        "created": "2026-10-25T17:11:22.000Z",
+        "updated": "2026-10-25T17:11:35.000Z",
+        "active": true,
+        "deleted": null,
+        "tasks": [],
+        "tags": [],
+        "resources": [],
+        "attributes": {
+          "author": "<account owner>",
+          "sourceUrl": null,
+          "sourceApplication": null,
+          "placeName": null,
+          "reminderTime": null,
+          "reminderDoneTime": null,
+          "isTemplate": null
+        }
+      }
+    },
+    "notesInAAfter": {
+      "ok": true,
+      "errorText": null,
+      "content": [
+        {
+          "type": "text",
+          "text": "1. 11bbaa78-63c1-c5a0-6848-987035a2794d — Test note 1\n\nShowing 1 of 1 (startIndex=0)."
+        }
+      ],
+      "structuredContent": {
+        "hits": [
+          {
+            "noteId": "11bbaa78-63c1-c5a0-6848-987035a2794d",
+            "title": "Test note 1",
+            "snippet": "alpha bravo charlie",
+            "createdAt": "2026-10-25T17:09:44.000Z",
+            "updatedAt": "2026-10-25T17:11:10.000Z",
+            "score": 0
+          }
+        ],
+        "totalResultCount": 1,
+        "startIndex": 0,
+        "isLastPage": true
+      }
+    },
+    "notesInBAfter": {
+      "ok": true,
+      "errorText": null,
+      "content": [
+        {
+          "type": "text",
+          "text": "1. 1485f425-1752-6081-8ae9-a1af33e2746c — Test note 2\n\nShowing 1 of 1 (startIndex=0)."
+        }
+      ],
+      "structuredContent": {
+        "hits": [
+          {
+            "noteId": "1485f425-1752-6081-8ae9-a1af33e2746c",
+            "title": "Test note 2",
+            "snippet": "delta echo",
+            "createdAt": "2026-10-25T17:11:22.000Z",
+            "updatedAt": "2026-10-25T17:11:35.000Z",
+            "score": 0
+          }
+        ],
+        "totalResultCount": 1,
+        "startIndex": 0,
+        "isLastPage": true
+      }
+    }
+  },
+  "attachments": [
+    {
+      "hash": "2fb191500c7a2ce5328828e1650b5759",
+      "getAttachment": {
+        "ok": true,
+        "errorText": null,
+        "content": [
+          {
+            "type": "text",
+            "text": "Download URL for IMG_7092.HEIC (image/jpeg, 1784307 bytes). Short-lived (expires 2026-10-26T01:37:35.496Z) and fetchable directly with no Evernote auth:\nhttps://storage.googleapis.com/en-production-resources/<shard>/<user>/2fb191500c7a2ce5328828e1650b5759-1784307?<signature removed>"
+          }
+        ],
+        "structuredContent": {
+          "downloadUrl": "https://storage.googleapis.com/en-production-resources/<shard>/<user>/2fb191500c7a2ce5328828e1650b5759-1784307?<signature removed>",
+          "expiresAt": 1792978655496,
+          "noteId": "11bbaa78-63c1-c5a0-6848-987035a2794d",
+          "resourceGuid": "612e1b18-2430-3851-c897-7034e113926b",
+          "hash": "2fb191500c7a2ce5328828e1650b5759",
+          "mimeType": "image/jpeg",
+          "filename": "IMG_7092.HEIC",
+          "sizeBytes": 1784307
+        }
+      },
+      "downloadHost": "storage.googleapis.com",
+      "download": {
+        "status": 200,
+        "contentType": "image/jpeg",
+        "bytes": 1784307,
+        "md5MatchesHash": true
+      }
+    }
+  ],
+  "recognition": {
+    "handwritingWordInGetNote": false,
+    "typedWordInGetNote": true,
+    "searchFindsHandwriting": true,
+    "searchOutcome": {
+      "ok": true,
+      "errorText": null,
+      "content": [
+        {
+          "type": "text",
+          "text": "1. 11bbaa78-63c1-c5a0-6848-987035a2794d — Test note 1\n\nShowing 1 of 1 (startIndex=0)."
+        }
+      ],
+      "structuredContent": {
+        "hits": [
+          {
+            "noteId": "11bbaa78-63c1-c5a0-6848-987035a2794d",
+            "title": "Test note 1",
+            "snippet": "alpha bravo charlie",
+            "createdAt": "2026-10-25T17:09:44.000Z",
+            "updatedAt": "2026-10-25T17:11:10.000Z",
+            "score": 0
+          }
+        ],
+        "totalResultCount": 1,
+        "startIndex": 0,
+        "isLastPage": true
+      }
+    }
+  },
+  "account": {
+    "allNotesFirstPage": {
+      "ok": true,
+      "errorText": null,
+      "hitsReturned": 1,
+      "totalResultCount": 4883,
+      "startIndex": 0,
+      "isLastPage": false
+    },
+    "maxPageSize": {
+      "ok": true,
+      "errorText": null,
+      "hitsReturned": 100,
+      "totalResultCount": 4883,
+      "startIndex": 0,
+      "isLastPage": false
+    },
+    "trashCount": {
+      "ok": true,
+      "errorText": null,
+      "hitsReturned": 1,
+      "totalResultCount": 414,
+      "startIndex": 0,
+      "isLastPage": false
+    },
+    "updatedLastDay": {
+      "ok": true,
+      "errorText": null,
+      "hitsReturned": 1,
+      "totalResultCount": 6,
+      "startIndex": 0,
+      "isLastPage": false
+    },
+    "lastNote": {
+      "ok": true,
+      "errorText": null,
+      "hitsReturned": 0,
+      "totalResultCount": 0,
+      "startIndex": 4882,
+      "isLastPage": true
+    },
+    "pastTheEnd": {
+      "ok": true,
+      "errorText": null,
+      "hitsReturned": 0,
+      "totalResultCount": 0,
+      "startIndex": 4883,
+      "isLastPage": true
+    },
+    "fullWalk": {
+      "totalResultCount": 4883,
+      "pages": 49,
+      "distinctNotes": 2000,
+      "duplicates": 0,
+      "pageErrors": 0,
+      "lastPageFlagSeen": true
+    },
+    "notebooksOneCall": {
+      "ok": true,
+      "errorText": null,
+      "hitsReturned": 100,
+      "totalResultCount": 182,
+      "startIndex": 0,
+      "isLastPage": true
+    },
+    "notebookCoverage": {
+      "totalResultCount": 182,
+      "distinctFoundByNameFragments": 182,
+      "fragmentQueriesThatHitTheCap": 9
+    }
+  },
+  "writeCheck": {
+    "createNoteSucceeded": false,
+    "errorText": "Permission denied: \"create_note\" needs the \"create\" permission, which this connection wasn't granted. To use it, reconnect and enable it on the Evernote authorization screen — re-authenticating alone won't help, since the permission must be granted there.",
+    "note": null
+  },
+  "problems": []
+}

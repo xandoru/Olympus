@@ -1,0 +1,51 @@
+{
+  "generatedAt": "2026-10-26T01:50:19.574Z",
+  "observedCap": 2000,
+  "problems": [],
+  "auth": {
+    "requestedScope": "read",
+    "grantedScope": null,
+    "accessTokenLifetimeSeconds": 3600,
+    "refreshTokenIssued": true
+  },
+  "accountTotal": 4881,
+  "capProbe": {
+    "start1900_max100": 100,
+    "start1950_max100": 50,
+    "start1999_max1": 1,
+    "start2000_max1": 0
+  },
+  "byNotebook": {
+    "notebooksTotalResultCount": 180,
+    "notebooksFound": 180,
+    "emptyNotebooks": 1,
+    "largestNotebook": 821,
+    "notebooksOverCap": 0,
+    "notebooksSplitByYear": 0,
+    "notebooksStillOverCapAfterSplit": 0,
+    "sumOfNotebookCounts": 4879,
+    "distinctNotesReached": 4879,
+    "reachedEveryNote": false
+  },
+  "byYear": {
+    "sumOfYearCounts": 4881,
+    "yearsOverCap": 0,
+    "distinctNotesReached": 4881,
+    "reachedEveryNote": true,
+    "sameNotesAsByNotebook": false
+  },
+  "changes": {
+    "updatedDayMinus1": 4,
+    "updatedSinceYesterdayAbsolute": 4,
+    "updatedSinceYesterdayWithTime": 4
+  },
+  "trash": {
+    "total": 416,
+    "distinctReached": 416
+  },
+  "cost": {
+    "toolCalls": 361,
+    "rateLimitRetries": 10,
+    "minutes": 5.9
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "evernote-probe",
+  "private": true,
+  "type": "module",
+  "description": "One-off read-only probe of Evernote's MCP server for the Olympus Evernote connector.",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.1"
+  }
+}

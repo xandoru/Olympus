@@ -1,0 +1,155 @@
+{
+  "generatedAt": "2026-10-26T17:42:43.025Z",
+  "problems": [],
+  "auth": {
+    "requestedScope": "read",
+    "grantedScope": null,
+    "accessTokenLifetimeSeconds": 3600,
+    "refreshTokenIssued": true
+  },
+  "accountTotal": 4882,
+  "activeOnlyQueryTotal": 4882,
+  "datetimeOperatorAccepted": 4882,
+  "dateListing": {
+    "slices": 40,
+    "splits": {},
+    "duplicates": 0,
+    "errors": 0,
+    "stillOverCap": 0,
+    "largestSlice": 753,
+    "distinctReached": 4882,
+    "reachedEveryNote": true,
+    "toolCalls": 85,
+    "minutes": 1.5
+  },
+  "notesPerYear": {
+    "2015": 182,
+    "2016": 574,
+    "2017": 382,
+    "2018": 285,
+    "2019": 514,
+    "2020": 753,
+    "2021": 632,
+    "2022": 369,
+    "2023": 340,
+    "2024": 310,
+    "2025": 319,
+    "2026": 222
+  },
+  "forcedSplitCheck": {
+    "year": 2020,
+    "yearTotal": 753,
+    "cap": 100,
+    "slices": 44,
+    "splits": {
+      "month": 1,
+      "day": 1
+    },
+    "duplicates": 0,
+    "errors": 0,
+    "stillOverCap": 0,
+    "largestSlice": 94,
+    "distinctReached": 753,
+    "reachedEveryNote": true
+  },
+  "notebookListing": {
+    "notebooks": 180,
+    "notebooksInASpace": 0,
+    "notebooksByAccess": {
+      "OWNED": 180
+    },
+    "spacesListed": 0,
+    "notesReached": 4880,
+    "notesInTwoNotebooks": 0,
+    "toolCalls": 247,
+    "minutes": 3.7
+  },
+  "notesInNoListedNotebook": 2,
+  "notesInNotebooksButNotByDate": 0,
+  "orphans": [
+    {
+      "getNoteOk": true,
+      "errorText": null,
+      "fieldsPresent": [
+        "active",
+        "attributes",
+        "content",
+        "created",
+        "id",
+        "title",
+        "updateSequenceNumber",
+        "updated",
+        "version"
+      ],
+      "attributesPresent": [
+        "author"
+      ],
+      "active": true,
+      "deletedIsSet": false,
+      "resources": 0,
+      "tasks": 0,
+      "createdYear": 2017,
+      "notebookIdPresent": false,
+      "notebookInListedNotebooks": false
+    },
+    {
+      "getNoteOk": true,
+      "errorText": null,
+      "fieldsPresent": [
+        "active",
+        "attributes",
+        "content",
+        "created",
+        "id",
+        "title",
+        "updateSequenceNumber",
+        "updated",
+        "version"
+      ],
+      "attributesPresent": [
+        "author"
+      ],
+      "active": true,
+      "deletedIsSet": false,
+      "resources": 0,
+      "tasks": 0,
+      "createdYear": 2017,
+      "notebookIdPresent": false,
+      "notebookInListedNotebooks": false
+    }
+  ],
+  "trash": {
+    "total": 416,
+    "distinctReached": 416,
+    "duplicates": 0,
+    "inDateListing": 0,
+    "inNotebookListing": 0,
+    "sampleTrashedNote": {
+      "getNoteOk": true,
+      "fieldsPresent": [
+        "active",
+        "attributes",
+        "content",
+        "created",
+        "deleted",
+        "id",
+        "notebookId",
+        "tags",
+        "title",
+        "updateSequenceNumber",
+        "updated",
+        "version"
+      ],
+      "attributesPresent": [],
+      "active": false,
+      "deletedIsSet": true,
+      "resources": 0,
+      "tasks": 0,
+      "createdYear": 2017
+    }
+  },
+  "cost": {
+    "toolCalls": 390,
+    "rateLimitRetries": 10
+  }
+}
